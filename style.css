@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+}
+
+.cabeçalho {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3vh;
+}
+
+.fundo-logo {
+    background-color: #012E40;
+    width: 98%;
+    height: 13vh;
+    border-radius: 1.6vh;
+    box-shadow: 0px 0.2vh 4vh 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo-container {
+    position: absolute;
+    top: 2.65vh;
+
+}
+
+.logo-container img {
+    width: 25vh;
+    height: auto;
+}
+
+.titulo-eleição-container {
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-eleição {
+    color: #012E40;
+    font-size: 3.2vh;
+    font-weight: bold;
+}
+
+.votação-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-votação {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75vw;
+    height: 67vh;
+    background-color: #fff;
+    border-radius: 2vh;
+    box-shadow: 0px 0.2vh 4vh 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 9vh
+}
+
+.titulo-votação {
+    font-size: 3vh;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: #012E40;
+}
+
+.container-imagem-candidatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.candidato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.2vh;
+}
+
+.container-imagem-candidatos img {
+    width: 19vh;
+    height: 26vh;
+    border: solid #012E40;
+    border-radius: 1.5vh;
+}
+
+.container-descrição {
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo-descrição {
+    color: #012E40;
+    font-size: 2.2vh;
+    font-weight: bold;
+    width: 19vh;
+    height: 7vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-inline: 1.5vh;
+    border-radius: 1.5vh;
+    border: solid #DCDCDC;
+    background: #FFF;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.retangulo-descrição:hover {
+    color: #ffffff;
+    border: solid #012E40;
+    background: #012E40;
+}
+
+.resultado-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+
+.resultado-container button {
+    margin-block: 3vh;
+    color: #ffffff;
+    font-size: 2.2vh;
+    font-weight: bold;
+    width: 19vh;
+    height: 7vh;
+    border-radius: 1.5vh;
+    border: solid #012E40;
+    background: #012E40;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.resultado-container button:hover {
+    color: #012E40;
+    border: solid #012E40;
+    background: #ffffff;
+}
+
+
+@media (max-width: 450px) {
+    .fundo-logo {
+        width: 93vw;
+    }
+
+    #titulo-eleição {
+        color: #012E40;
+        font-size: 2vh;
+    }
+
+    .titulo-votação {
+        font-size: 3vh;
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        margin-top: 4vh;
+        margin-bottom: 3vh;
+        color: #012E40;
+    }
+    
+    .container-imagem-candidatos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-inline: 0vh;
+    }
+    
+    .container-imagem-candidatos img {
+        width: 18vh;
+        height: 26vh;
+        border: solid #012E40;
+        border-radius: 1.5vh;
+    }
+
+    .bloco-votação {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 93vw;
+        height: 137vh;
+        background-color: #fff;
+        border-radius: 2vh;
+        box-shadow: 0px 0.2vh 4vh 0px rgba(0, 0, 0, 0.08);
+        margin-bottom: 9vh;
+    }
+
+    .container-descrição {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-inline: 0vh;
+    }
+    
+    .retangulo-descrição {
+        color: #012E40;
+        font-size: 2.2vh;
+        font-weight: bold;
+        width: 18vh;
+        height: 7vh;
+        margin-top: 2vh;
+        margin-inline: 0;
+        border-radius: 1.5vh;
+        border: solid #DCDCDC;
+        background: #FFF;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .resultado-container button {
+        margin-block: 2vh;
+        width: 40vh;
+        height: 7vh;
+
+    }
+}
