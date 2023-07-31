@@ -29,12 +29,16 @@ body {
 
 .logo-container {
     position: absolute;
-    top: 2.45vh;
+    display: flex;
+    width: 98%;
+    height: 13vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-container img {
     width: 29vh;
-    height: auto;
+    height: 11.1vh;
 }
 
 .titulo-eleição-container {
@@ -174,6 +178,20 @@ body {
 @media (max-width: 450px) {
     .fundo-logo {
         width: 93vw;
+    }
+
+    .logo-container {
+        position: absolute;
+        display: flex;
+        width: 93vw;
+        height: 13vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-container img {
+        width: 29vh;
+        height: 11vh;
     }
 
     #titulo-eleição {
